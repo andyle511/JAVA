@@ -11,21 +11,25 @@ package project;
  */
 public class Equipment 
 {
-    private String grade;
+    private String type;
     private String name;
         
-    public Equipment(String grade, String name)
+    public Equipment()
     {
-        this.grade = grade;
+        this("","");
+    }
+    public Equipment(String type, String name)
+    {
+        this.type = type;
         this.name = name;
     }
-    public String getGrade()
+    public String getType()
     {
-        return grade;
+        return type;
     }
-    public void setGrade(String grade)
+    public void setType(String type)
     {
-        this.grade = grade;
+        this.type = type;
     }
     public String getName()
     {
@@ -39,6 +43,6 @@ public class Equipment
     @Override
     public String toString()
     {
-        return name + " of " + grade;
+        return name + " of " + type;
     }
 }
